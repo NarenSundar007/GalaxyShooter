@@ -3,8 +3,6 @@ const c = canvas.getContext('2d')
 
 const socket = io()
 
-
-
 const scoreEl = document.querySelector('#scoreEl')
 
 const devicePixelRatio = window.devicePixelRatio || 1
@@ -128,6 +126,21 @@ socket.on('updatePlayers', (backEndPlayers) => {
   }
 })
 
+//ping
+const pingDisplay = document.getElementById('pingDisplay'); // Assume there's an element in HTML to show the ping
+let lastPingTime;
+
+// Send ping at regular intervals
+setInterval(() => {
+  lastPingTime = Date.now();
+  socket.emit('ping');
+}, 1000); // Ping every second
+
+// Handle pong response and calculate latency
+socket.on('pong', () => {
+  const latency = Date.now() - lastPingTime;
+  pingDisplay.textContent = `Ping: ${latency} ms`;
+});
 
 
 let animationId
