@@ -25,6 +25,10 @@ let projectileId = 0
 
 io.on('connection', (socket) => {
   console.log('a user connected')
+    
+  socket.on('ping', () => {
+    socket.emit('pong');
+  });
 
 
 //testing message 
