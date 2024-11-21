@@ -39,4 +39,8 @@ Make sure you have the following installed on your system:
    git clone https://github.com/yourusername/multiplayer-game.git
    cd multiplayer-game
 
-2. node backend.js - This command will run the server and you are good to go!
+
+2. **Running the server:**
+   ```bash
+   node backend.js
+    
