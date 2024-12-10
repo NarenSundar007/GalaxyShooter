@@ -1,5 +1,8 @@
 # Galaxy Shooter
 
+![image](https://github.com/user-attachments/assets/a66d74af-18ab-4c18-96d7-21a51777c83a)
+
+
 ## Overview
 This project is a multiplayer real-time game built using modern web technologies. Players can move their characters, shoot projectiles, and chat with each other, all in real time. The game features smooth animations, a responsive interface, and robust synchronization between the server and clients.
 
