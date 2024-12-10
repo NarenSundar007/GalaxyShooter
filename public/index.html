@@ -23,6 +23,7 @@
 
     /* Canvas and chat container styling */
     .canvas-container {
+      margin-right:50px;
       position: relative;
       display: flex;
     }
@@ -139,12 +140,20 @@
       border: none;
       background-image: linear-gradient(to right, rgb(6, 182, 212), rgb(59, 130, 246));
       color: white;
-      cursor: pointer;
+      cursor: pointer;}
+
+    .title{
+      top : 0; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position:absolute;
     }
+    
   </style>
 </head>
 <body>
-<div style="position:absolute;top:25px;left:500px">
+<div class = "title">
   <h1 class="minimal-title">
     Galaxy Shooter
   </h1>
